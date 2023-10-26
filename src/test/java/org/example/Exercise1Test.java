@@ -9,4 +9,10 @@ class Exercise1Test {
         int expected = Exercise1.numberCounter(126098);
         assertEquals(expected,6);
     }
+
+    @org.junit.jupiter.api.Test
+    void numberCounterZero() {
+        int expected = Exercise1.numberCounter(0);
+        assertEquals(expected,-1);
+    }
 }
