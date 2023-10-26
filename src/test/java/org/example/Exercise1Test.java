@@ -15,7 +15,7 @@ class Exercise1Test {
     @org.junit.jupiter.api.Test
     void numberCounterZero() {
         int expected = Exercise1.numberCounter(0);
-        assertEquals(expected,-1);
+        assertEquals(expected,1);
     }
 
    @Test

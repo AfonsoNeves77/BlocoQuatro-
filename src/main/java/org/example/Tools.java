@@ -26,10 +26,15 @@ public class Tools {
         }
         return finalArray;
     }
-
     public static boolean emptyArray(int[] n){
         return Arrays.equals(n, new int[0]);
     }
+
+    public static boolean isInverted(int nMax,int nMin){
+        return nMin > nMax;
+    }
+
+
 
 
 

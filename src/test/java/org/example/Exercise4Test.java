@@ -59,4 +59,16 @@ class Exercise4Test {
         int expected = Exercise4.sumOddNumbers(-1782);
         assertEquals(expected,-1);
     }
+
+    @Test
+    void returningParcialArray() {
+        int[] expected = Exercise4.returningParcialArray(new int[]{0,1,2,3,4,5,6,7},4);
+        assertArrayEquals(new int[]{0,1,2,3},expected);
+    }
+
+    @Test
+    void returningParcialArrayZero() {
+        int[] expected = Exercise4.returningParcialArray(new int[]{0,1,2,3,4,5,6,7},-0);
+        assertArrayEquals(new int[]{},expected);
+    }
 }

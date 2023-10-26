@@ -4,6 +4,8 @@ public class Exercise4 {
 
     public static int[] evenNumberVector(int[] n){
 
+        //14,15,16 - My exercises, 13g,18ab
+
         if (Tools.emptyArray(n)){
             return n;
         }
@@ -66,6 +68,17 @@ public class Exercise4 {
             n/=10;
         }
         return sum;
+    }
+
+    public static int[] returningParcialArray(int[] array, int n){
+        if(Tools.isZeroOrNeg(n)){
+            return new int[0];
+        }
+        int[] arrayNew = new int[n];
+        for(int i = 0; i < n; i++){
+            arrayNew[i] = array[i];
+        }
+        return arrayNew;
     }
 
 }
