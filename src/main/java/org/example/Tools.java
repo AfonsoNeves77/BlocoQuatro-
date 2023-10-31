@@ -34,6 +34,15 @@ public class Tools {
         return nMin > nMax;
     }
 
+    public static boolean arrayHasZeroOrNegNumbers(int[] array){
+        for (int i = 0; i < array.length; i++){
+            if(array[i] <= 0){
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 
 

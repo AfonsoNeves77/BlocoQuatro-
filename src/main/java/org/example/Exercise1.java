@@ -5,6 +5,7 @@ import java.util.Objects;
 
 public class Exercise1 {
 
+
     public static int numberCounter(int n){
         if(Tools.isZeroOrNeg(n)){
             return -1;
