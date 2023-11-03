@@ -43,6 +43,24 @@ public class Tools {
         return false;
     }
 
+    public static boolean isIrregular(int[][] array){
+        boolean isIrregular = false;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].length != array[0].length) {
+                isIrregular = true;
+                break;
+            }
+        }
+        return isIrregular;
+    }
+
+    public static boolean isaSquare(int[][] array){
+        if(!isIrregular(array)){
+            return array[0].length == array.length;
+        }
+        return false;
+    }
+
 
 
 
