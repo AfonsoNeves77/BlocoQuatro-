@@ -2,6 +2,8 @@ package org.example;
 
 public class Ex22 {
 
+    // Numero positivo se número preexistente, 0 se célula vazia e -n (numero qualquer) se número inserido pelo jogador
+
     public static boolean isFullMatrix(int[][] sudokuMat){
         if(!Tools.isaSquare(sudokuMat)){
             return false;
